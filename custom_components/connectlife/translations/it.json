@@ -400,8 +400,56 @@
       "existing_sr_mode": {
         "name": "Modalità SR esistente"
       },
+      "f_e_arkgrille": {
+        "name": "Allarme di protezione griglia cabinet"
+      },
       "f_e_filterclean": {
         "name": "Pulizia filtro"
+      },
+      "f_e_incoiltemp": {
+        "name": "Guasto del sensore di temperatura interno della bobina"
+      },
+      "f_e_incom": {
+        "name": "Comunicazione interno/esterno fallita"
+      },
+      "f_e_indisplay": {
+        "name": "Errore di comunicazione tra pannello di controllo interno e display"
+      },
+      "f_e_ineeprom": {
+        "name": "Errore EEPROM della scheda di controllo interna"
+      },
+      "f_e_inele": {
+        "name": "Errore di comunicazione tra pannello di controllo interno e pannello di potenza interno"
+      },
+      "f_e_infanmotor": {
+        "name": "Guasto al funzionamento anomalo del motore della ventola interna"
+      },
+      "f_e_inhumidity": {
+        "name": "Guasto al sensore di umidità interno"
+      },
+      "f_e_inkeys": {
+        "name": "Errore di comunicazione tra pannello di controllo interno e tastiera"
+      },
+      "f_e_intemp": {
+        "name": "Guasto al sensore di temperatura interno"
+      },
+      "f_e_invzero": {
+        "name": "Guasto di rilevamento del passaggio per lo zero della tensione interna"
+      },
+      "f_e_inwifi": {
+        "name": "Errore di comunicazione tra il pannello di controllo WIFI e il pannello di controllo interno"
+      },
+      "f_e_outcoiltemp": {
+        "name": "Guasto del sensore di temperatura della serpentina esterna"
+      },
+      "f_e_outeeprom": {
+        "name": "Errore EEPROM esterna"
+      },
+      "f_e_outgastemp": {
+        "name": "Guasto del sensore della temperatura di espulsione"
+      },
+      "f_e_outtemp": {
+        "name": "Guasto al sensore di temperatura ambiente"
       },
       "f_e_pump": {
         "name": "Pompa"
@@ -787,6 +835,9 @@
       "step3_status": {
         "name": "Step 3 stato"
       },
+      "t_beep": {
+        "name": "Beep"
+      },
       "tab_setting_status": {
         "name": "Impostazione Tab"
       },
@@ -843,6 +894,9 @@
             }
           },
           "swing_mode": {
+            "state": {}
+          },
+          "swing_horizontal_mode": {
             "state": {
               "both_sides": "Entrambi i lati",
               "forward": "Davanti",
@@ -950,11 +1004,14 @@
           "running": "In esecuzione"
         }
       },
+      "current_temperature": {
+        "name": "Temperatura corrente"
+      },
       "daily_energy_consumption": {
-        "name": "Consumo energia giornaliero"
+        "name": "Consumo giornaliero di energia"
       },
       "daily_energy_kwh": {
-        "name": "Consumo energia giornaliero"
+        "name": "Consumo giornaliero di energia"
       },
       "defaultspinspeed": {
         "name": "Velocità centrifuga predefinita"
@@ -965,6 +1022,9 @@
       "delay_start_remaining_time": {
         "name": "Tempo rimanente all'avvio ritardato"
       },
+      "delay_start_remaining_time_in_minutes": {
+        "name": "Tempo rimanente all'avvio ritardato in minuti"
+      },
       "delay_start_set_time": {
         "name": "Imposta orario di avvio ritardato"
       },
@@ -972,7 +1032,14 @@
         "name": "Tempo di ritardo della fine"
       },
       "delaystart_delayend_duration_inminutes": {
-        "name": "Durata del ritado all'avvio"
+        "name": "Tempo di ritardo all'avvio"
+      },
+      "delaystart_delayend_mode_status": {
+        "name": "Stato dell'avvio ritardato",
+        "state": {
+          "off": "Off",
+          "on": "On"
+        }
       },
       "delaystart_delayend_remaining_timein_minutes": {
         "name": "Tempo rimanente all'avvio ritardato"
@@ -1015,7 +1082,8 @@
           "not_available": "Non dispobile",
           "open": "Aperto",
           "other": "Altro",
-          "closed": "Chiuso"
+          "closed": "Chiuso",
+          "other": "Altro"
         }
       },
       "electricit_consumption_decimal": {
@@ -1232,6 +1300,9 @@
           "paused": "In pausa",
           "stopped": "Fermato"
         }
+      },
+      "selected_program_duration_in_minutes": {
+        "name": "Durata del programma selezionato"
       },
       "selected_program_id": {
         "name": "Programma selezionato",
@@ -1570,6 +1641,14 @@
       "spintime_index": {
         "name": "Indice del tempo di rotazione"
       },
+      "status": {
+        "name": "Stato del dispositivo",
+        "state": {
+          "off": "Off",
+          "standby": "Standby",
+          "running": "In esecuzione"
+        }
+      },
       "step1_duration": {
         "name": "Durata Fase 1"
       },
@@ -1665,7 +1744,7 @@
           "sabbath": "Sabbath",
           "programs": "Programmi",
           "warming": "Riscalda",
-          "microwave_clean": "Pulizia micro",
+          "microwave_clean": "Pulizia micro"
         }
       },
       "step2_remaining_time": {
@@ -1716,7 +1795,7 @@
           "sabbath": "Sabbath",
           "programs": "Programmi",
           "warming": "Riscalda",
-          "microwave_clean": "Pulizia micro",
+          "microwave_clean": "Pulizia micro"
         }
       },
       "step3_remaining_time": {
@@ -1805,30 +1884,6 @@
       },
       "zone_number": {
         "name": "Numero di zone"
-      },
-      "status": {
-        "name": "Stato del dispositivo",
-        "state": {
-          "off": "Spento",
-          "standby": "Standby",
-          "running": "In funzione"
-        }
-      },
-      "door_status": {
-        "name": "Stato sportello",
-        "state": {
-          "not_available": "Non disponibile",
-          "open": "Apero",
-          "closed": "Chiuso",
-          "closed_when_running": "Shiuso quando in funzione"
-        }
-      },
-      "delaystart_delayend_mode_status": {
-        "name": "Stato della modalità ritardo",
-        "state": {
-          "off": "Off",
-          "on": "On"
-        }
       }
     },
     "switch": {
@@ -1952,12 +2007,6 @@
       "extrarinsenum": {
         "name": "Numero di risciacqui extra"
       },
-      "lightbrightness": {
-        "name": "luminosità luce"
-      },
-      "lightcolortemperature": {
-        "name": "Temperatura di colore della luce"
-      },
       "motorlevel": {
         "name": "Livello del motore"
       },
@@ -2034,6 +2083,12 @@
           "follow": "Segui",
           "not_follow": "Non seguire"
         }
+      },
+      "temperature": {
+        "name": "Temperatura",
+        "state": {
+          "cold": "Fredda"
+        }
       }
     },
     "water_heater": {
@@ -2052,6 +2107,12 @@
       },
       "freeze_temperature": {
         "name": "Temperatura freezer"
+      },
+      "lightbrightness": {
+        "name": "Luminosità"
+      },
+      "lightcolortemperature": {
+        "name": "Temperatura di colore"
       },
       "refrigerator_max_temperature": {
         "name": "Temperatura max frigo"
